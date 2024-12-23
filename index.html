@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body {
+      position: relative;
+    }
+
+    .cursor-shadow {
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 9999;
+      transition: transform 0.2s ease;
+    }
+
+    
+    .what-i-do-box {
+      position: relative;
+      background-color: #1f1f1f;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      border-bottom: 4px solid gold; 
+      transition: all 0.3s ease;
+    }
+
+    .what-i-do-box:hover {
+      box-shadow: inset 0 0 15px rgba(255, 255, 255, 0.3); 
+      transform: scale(1.02); 
+    }
+
+    .what-i-do-box i {
+      transition: color 0.3s ease;
+    }
+
+    .what-i-do-box:hover i {
+      color: gold; 
+    }
+  </style>
+</head>
+<body class="bg-black text-white h-screen">
+  <header class="flex justify-between items-center px-6 py-4">
+    <h1 class="text-3xl font-bold">EBAD BALOCH</h1>
+    <div class="flex gap-4">
+      <button class="px-6 py-2 border border-slate-300 text-white font-medium rounded-md transition-transform hover:bg-white hover:text-black focus:ring-2 focus:ring-white active:scale-95">
+        Let's Talk
+      </button>
+      <div class="relative">
+        <button id="menuButton" class="px-6 py-2 border border-slate-300 text-white font-medium rounded-md transition-transform hover:bg-white hover:text-black focus:ring-2 focus:ring-white active:scale-25">
+          Menu
+        </button>
+        <div id="menuDropdown" class="hidden absolute right-0 mt-2 w-48 bg-white text-black rounded-lg shadow-lg">
+          <a href="#about" class="block px-4 py-2 hover:bg-gray-200">About</a>
+          <a href="#portfolio" class="block px-4 py-2 hover:bg-gray-200">Portfolio</a>
+          <a href="#contact" class="block px-4 py-2 hover:bg-gray-200">Contact</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="h-full flex flex-col lg:flex-row items-center justify-between px-6 lg:px-10 gap-8">
+    <section class="text-center order-1">
+      <img class="rounded-full w-[400px] h-[450px] mx-auto mb-9" src="/ebad hun (2).jpg" alt="Profile Picture">
+      <h2 class="text-5xl font-bold mb-28">EBAD BALOCH</h2>
+    </section>
+
+    <section class="text-left max-w-lg order-2">
+      <p class="text-2xl font-light mb-6">My goal is to use my creativity and expertise to deliver engaging and efficient digital solutions.</p>
+      <ul class="flex flex-wrap gap-4 text-lg">
+        <li class="px-3 py-1 border rounded-full">Web Development</li>
+        <li class="px-3 py-1 border rounded-full">UI Design</li>
+        <li class="px-3 py-1 border rounded-full">Video Editing</li>
+        <li class="px-3 py-1 border rounded-full">Ms Office</li>
+        <li class="px-3 py-1 border rounded-full">Photo Editing</li>
+      </ul>
+    </section>
+  </main>
+  
+<div class="bg-black py-16 mb-5">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-white text-5xl font-bold mb-12 flex items-center justify-center ">
+      What I <span class="text-yellow-500">Do</span>
+    </h2>
+
+    <div class="space-y-6 flex flex-col sm:flex-row sm:space-y-0 sm:space-x-6 items-end">
+      <div class="what-i-do-box bg-gray-800 p-6 rounded-lg shadow-lg w-full sm:w-1/3">
+        <div class="flex justify-between items-center">
+          <div class="flex space-x-3 items-center">
+            <p class="text-white font-semibold text-2xl">01/</p>
+            <p class="text-white text-2xl font-bold">Design</p>
+          </div>
+          <i class="fas fa-pencil-alt text-white text-3xl"></i>
+        </div>
+        <p class="text-gray-400 mt-3">I am a passionate designer...</p>
+      </div>
+
+      <div class="what-i-do-box bg-gray-800 p-6 rounded-lg shadow-lg w-full sm:w-1/3">
+        <div class="flex justify-between items-center">
+          <div class="flex space-x-3 items-center">
+            <p class="text-white font-semibold text-2xl">02/</p>
+            <p class="text-white text-2xl font-bold">Development</p>
+          </div>
+          <i class="fas fa-code text-white text-3xl"></i>
+        </div>
+        <p class="text-gray-400 mt-3">I am passionate about building clean...</p>
+      </div>
+
+       
+      <div class="what-i-do-box bg-gray-800 p-6 rounded-lg shadow-lg w-full sm:w-1/3">
+        <div class="flex justify-between items-center">
+          <div class="flex space-x-3 items-center">
+            <p class="text-white font-semibold text-2xl">03/</p>
+            <p class="text-white text-2xl font-bold">Editing</p>
+          </div>
+          <i class="fas fa-laptop text-white text-3xl"></i>
+        </div>
+        <p class="text-gray-400 mt-3">I am skilled in crafting...</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="max-w-7xl mx-auto px-4">
+  
+
+  <div class="space-y-6 flex flex-col sm:flex-row sm:space-y-0 sm:space-x-6 items-end">
+
+    <div class="what-i-do-box bg-gray-800 p-6 rounded-lg shadow-lg w-full sm:w-1/3">
+      <div class="flex justify-between items-center">
+        <div class="flex space-x-3 items-center">
+          <p class="text-white font-semibold text-2xl">01/</p>
+          <p class="text-white text-2xl font-bold">Photo Editing</p>
+        </div>
+        <i class="fas fa-pencil-alt text-white text-3xl"></i>
+      </div>
+      <p class="text-gray-400 mt-3">I am a passionate designer...</p>
+    </div>
+
+    <div class="what-i-do-box bg-gray-800 p-6 rounded-lg shadow-lg w-full sm:w-1/3">
+      <div class="flex justify-between items-center">
+        <div class="flex space-x-3 items-center">
+          <p class="text-white font-semibold text-2xl">02/</p>
+          <p class="text-white text-2xl font-bold">Ms Office</p>
+        </div>
+        <i class="fas fa-code text-white text-3xl"></i>
+      </div>
+      <p class="text-gray-400 mt-3">I am passionate about building clean...</p>
+    </div>
+
+     
+    <div class="what-i-do-box bg-gray-800 p-6 rounded-lg shadow-lg w-full sm:w-1/3">
+      <div class="flex justify-between items-center">
+        <div class="flex space-x-3 items-center">
+          <p class="text-white font-semibold text-2xl">03/</p>
+          <p class="text-white text-2xl font-bold">Editing</p>
+        </div>
+        <i class="fas fa-laptop text-white text-3xl"></i>
+      </div>
+      <p class="text-gray-400 mt-3">I am skilled in crafting...</p>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="bg-gray-900 mx-6 my-3 rounded-3xl py-16">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-white text-4xl flex items-center justify-center font-bold mb-12">
+      My <span class="text-yellow-500">Projects</span>
+    </h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="bg-black text-white p-6 rounded-lg shadow-xl hover:scale-105 transition-transform">
+        <img class="w-full h-48 object-cover rounded-t-lg mb-6" src="./Clock.png" alt="Project 1">
+        <h3 class="text-2xl font-semibold mb-2">Digital Clock</h3>
+        <p class="text-gray-400 mb-4">A digital clock project...</p>
+        <a href="#project1" class="text-yellow-500 hover:underline">github</a>
+      </div>
+
+
+      <div class="bg-black text-white p-6 rounded-lg shadow-xl hover:scale-105 transition-transform">
+        <img class="w-full h-48 object-cover rounded-t-lg mb-6" src="./ebadrANDOM.png" alt="Project 1">
+        <h3 class="text-2xl font-semibold mb-2">Digital Clock</h3>
+        <p class="text-gray-400 mb-4">A digital clock project...</p>
+        <a href="#project1" class="text-yellow-500 hover:underline">github</a>
+      </div>
+
+      <div class="bg-black text-white p-6 rounded-lg shadow-xl hover:scale-105 transition-transform">
+        <img class="w-full h-48 object-cover rounded-t-lg mb-6" src="./Todo.png" alt="Project 1">
+        <h3 class="text-2xl font-semibold mb-2">Digital Clock</h3>
+        <p class="text-gray-400 mb-4">A digital clock project...</p>
+        <a href="#project1" class="text-yellow-500 hover:underline">github</a>
+      </div>
+
+      <div class="bg-black text-white p-6 rounded-lg shadow-xl hover:scale-105 transition-transform">
+        <img class="w-full h-48 object-cover rounded-t-lg mb-6" src="./Watch.png" alt="Project 1">
+        <h3 class="text-2xl font-semibold mb-2">Digital Clock</h3>
+        <p class="text-gray-400 mb-4">A digital clock project...</p>
+        <a href="#project1" class="text-yellow-500 hover:underline">github</a>
+      </div>
+
+      <div class="bg-black text-white p-6 rounded-lg shadow-xl hover:scale-105 transition-transform">
+        <img class="w-full h-48 object-cover rounded-t-lg mb-6" src="./ebadrANDOM.png" alt="Project 1">
+        <h3 class="text-2xl font-semibold mb-2">Digital Clock</h3>
+        <p class="text-gray-400 mb-4">A digital clock project...</p>
+        <a href="#project1" class="text-yellow-500 hover:underline">github</a>
+      </div>
+
+      <div class="bg-black text-white p-6 rounded-lg shadow-xl hover:scale-105 transition-transform">
+        <img class="w-full h-48 object-cover rounded-t-lg mb-6" src="./Clock.png" alt="Project 1">
+        <h3 class="text-2xl font-semibold mb-2">Digital Clock</h3>
+        <p class="text-gray-400 mb-4">A digital clock project...</p>
+        <a href="#project1" class="text-yellow-500 hover:underline">github</a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+  
+
+ <section class="bg-slate-700 mx-6 rounded-2xl mb-3 body-font relative">
+    <div class="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
+
+      <div class="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
+        <iframe width="100%" height="100%" class="absolute inset-0" frameborder="0" title="map" marginheight="0" marginwidth="0" scrolling="no" src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=%C4%B0zmir+(My%20Business%20Name)&ie=UTF8&t=&z=14&iwloc=B&output=embed" style="filter: grayscale(1) contrast(1.2) opacity(0.4);"></iframe>
+        <div class="bg-white relative flex flex-wrap py-6 rounded shadow-md">
+          <div class="lg:w-1/2 px-6">
+            <h2 class="title-font font-bolder text-gray-900 tracking-widest text-xs">Find Me On</h2>
+            <p class="mt-5  text-indigo-500">GitHub, LinkedIn, Facebook, Instagram</p>
+          </div>
+          <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
+            <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">EMAIL</h2>
+            <a class="text-indigo-500 leading-relaxed">ebadbaloch345@gmail.com</a>
+            <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">PHONE</h2>
+            <p class="leading-relaxed text-indigo-500">+92 316 0298672</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="lg:w-1/3 md:w-1/2 bg-gray-900 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0 p-6 rounded-lg shadow-lg">
+        <h2 class="text-gray-900 text-lg mb-4 font-medium title-font">Contact Me</h2>
+        <p class="leading-relaxed mb-5 text-gray-200">Feel free to drop a message!</p>
+        
+        <div class="relative mb-4">
+          <label for="name" class="leading-7 text-sm text-gray-200">Your Name</label>
+          <input type="text" id="name" name="name" class="w-full bg-transparent border rounded-2xl border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-2 px-3 leading-8 transition-colors duration-200 ease-in-out">
+        </div>
+        <div class="relative mb-4">
+          <label for="email" class="leading-7 text-sm text-gray-200">Your Email</label>
+          <input type="email" id="email" name="email" class="w-full bg-transparent border  rounded-2xl border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-2 px-3 leading-8 transition-colors duration-200 ease-in-out">
+        </div>
+        <div class="relative mb-4">
+          <label for="message" class="leading-7 text-sm text-gray-200">Message</label>
+          <textarea id="message" name="message" class="w-full bg-transparent border  rounded-2xl border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-2 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+        </div>
+  
+        <button class="text-white bg-indigo-500 border-0  rounded-2xl py-2 px-6 focus:outline-none hover:bg-indigo-600  text-lg">Send</button>
+        <p class="text-xs text-gray-200 mt-3">We'll get back to you as soon as possible!</p>
+      </div>
+    </div>
+    
+    <footer class="bg-gray-800 text-white py-4  mt-10">
+      <div class="container text-center">
+        <p class="text-sm">Made with <span class="text-yellow-300">GitProfile</span> and ❤️</p>
+      </div>
+    </footer>
+  </section>
+  
+  
+  
+
+  <script>
+    const shadow = document.createElement("div");
+    shadow.classList.add("cursor-shadow");
+    document.body.appendChild(shadow);
+
+    let mouseX = 0, mouseY = 0;
+    let shadowX = 0, shadowY = 0;
+
+    document.addEventListener("mousemove", (e) => {
+      mouseX = e.pageX;
+      mouseY = e.pageY;
+    });
+
+    function animateShadow() {
+      shadowX += (mouseX - shadowX) * 0.2;
+      shadowY += (mouseY - shadowY) * 0.2;
+
+      shadow.style.left = `${shadowX}px`;
+      shadow.style.top = `${shadowY}px`;
+
+      requestAnimationFrame(animateShadow);
+    }
+
+    animateShadow();
+  </script>
+</body>
+</html>
